@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import java.util.Random;
 
@@ -17,6 +18,8 @@ public class JogoDoSorteio extends AppCompatActivity {
 
         // Get Button
         Button btn_Play = findViewById(R.id.btn_Play);
+        // Get Text
+        TextView txt_Feedback = findViewById(R.id.txtView_Feedback);
 
         // Set Button Behaviour
         btn_Play.setOnClickListener(new View.OnClickListener() {
