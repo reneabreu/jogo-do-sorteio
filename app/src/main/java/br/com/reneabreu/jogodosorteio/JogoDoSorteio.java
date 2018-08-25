@@ -33,10 +33,13 @@ public class JogoDoSorteio extends AppCompatActivity {
         });
     }
 
+    // Random Function
     private int GetRandomNumber() {
+        // Create random variable
         Random randomNumber = new Random();
 
-        return randomNumber.nextInt(101);
+        // Return random int between 0, 100
+        return randomNumber.nextInt(100);
     }
 
 }
