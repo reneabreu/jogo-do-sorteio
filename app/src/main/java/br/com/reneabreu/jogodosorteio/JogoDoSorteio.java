@@ -19,13 +19,16 @@ public class JogoDoSorteio extends AppCompatActivity {
         // Get Button
         Button btn_Play = findViewById(R.id.btn_Play);
         // Get Text
-        TextView txt_Feedback = findViewById(R.id.txtView_Feedback);
+        final TextView txt_Feedback = findViewById(R.id.txtView_Feedback);
 
         // Set Button Behaviour
         btn_Play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.i("Click Behaviour", "Clicked and got number:" + GetRandomNumber());
+
+                // Change text
+                txt_Feedback.setText("Você selecionou o número: " + GetRandomNumber());
             }
         });
     }
